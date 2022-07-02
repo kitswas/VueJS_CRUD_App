@@ -4,17 +4,31 @@ This project uses [Vite](https://vitejs.dev/). It requires [Node.js](https://nod
 
 ## To start
 
+### Development build
+
 With npm,
+
 ```shell
 npm install
 npm run dev
 ```
 
 If using yarn,
+
 ```shell
 yarn
 yarn dev
 ```
+
+### Production
+
+```shell
+npm install
+npm run build
+npm run serve
+```
+
+**Hint:** Try a Lighthouse test from any Chromium browser. 
 
 ## Without setup
 
