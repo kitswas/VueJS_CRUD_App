@@ -25,6 +25,8 @@ export default {
   },
   computed: {
     filteredItems() {
+      if (this.query !== '')
+        this.selected = '' // cannot risk a hidden selected item
       return this.items.filter((n) =>
           n.task.toLowerCase().includes(this.query.toLowerCase())
       )
